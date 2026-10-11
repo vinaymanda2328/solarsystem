@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     }
+
+     body{
+     height: 100vh;  
+     background-image:url(https://media.istockphoto.com/id/1732963074/photo/starry-night-sky-in-space.jpg?s=612x612&w=0&k=20&c=AHcmpswk3g3toHSFt5yCV_1uzMZUaJl95p3UIgm8euo=) ;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     overflow: hidden;
+     
+     }
+
+     .solar-system{
+     position:relative;
+     width:900px;
+     height:900px;
+     }
+
+     .sun{
+     position:absolute;
+     top:50%;
+     left:50%;
+     width:80px;
+     height:80px;
+     background:gold;
+     border-radius:50%;
+     transform:translate(-50%, -50%);
+     box-shadow:0 0 50px orange;
+     }
+
+
+     .orbit{
+     position:absolute;
+     top:50%;
+     left:50%;
+     border:1px solid rgba(255,255,255,0.2);
+     border-radius:50%;
+     transform:translate(-50%, -50%);
+     animation:rotate linear infinite;
+     }
+
+     .planet{
+     position:absolute;
+     top:50%;
+     left:100%;
+     transform:translate(-50%, -50%);
+     border-radius:50%;
+     }
+
+     .mercury-orbit{
+     width:120px;
+     height:120px;
+     animation-duration:4s;
+     }
+     .mercury{
+     width:10px;
+     height:10px;
+     background:#a9a9a9;
+     }
+
+     .venus-orbit{
+     width:180px;
+     height:180px;
+     animation-duration:7s;
+     }
+     .venus{
+     width:14px;
+     height:14px;
+     background:#d4af37;
+     } 
+
+     .earth-orbit{
+     width:250px;
+     height:250px;
+     animation-duration:10s;
+     }
+     .earth{
+     width:16px;
+     height:16px;
+     background:#1e90ff;
+     }
+
+
+     .mars-orbit{
+     width:320px;
+     height:320px;
+     animation-duration:14s;
+     }
+     .mars{
+     width:13px;
+     height:13px;
+     background:#ff4500;
+     }
+
+     .jupiter-orbit{
+     width:420px;
+     height:420px;
+     animation-duration:18s;
+     }
+     .jupiter{
+     width:28px;
+     height:28px;
+     background:#d2b48c;
+     }
+
+     .saturn-orbit{
+     width:520px;
+     height:520px;
+     animation-duration:22s;
+     }
+     .saturn{
+     width:24px;
+     height:24px;
+     background:#f4d03f;
+     }
+
+     .uranus-orbit{
+     width:620px;
+     height:620px;
+     animation-duration:26s;
+     }
+     .uranus{
+     width:20px;
+     height:20px;
+     background:#7fffd4;
+     }
+     .neptune-orbit{
+     width:720px;
+     height:720px;
+     animation-duration:30s;
+     }
+     .neptune{
+     width:20px;
+     height:20px;
+     background:#4169e1;
+     }
+
+     @keyframes rotate{
+      from{
+           transform:translate(-50%, -50%) rotate(0deg);
+      }
+      to{
+         transform:translate(-50%, -50%) rotate(360deg);
+      }
+     }
+    </style>
+</head>
+<body >
+ <div class="solar-system">
+
+     <div class="sun"></div>
+
+     <div class="orbit mercury-orbit">
+        <div class="planet mercury"></div>
+     </div>
+
+     <div class="orbit venus-orbit">
+        <div class="planet venus"></div>
+     </div>
+
+     <div class="orbit earth-orbit">
+        <div class="planet earth"></div>
+     </div>
+
+     <div class="orbit mars-orbit">
+        <div class="planet mars"></div>
+     </div>
+
+     <div class="orbit jupiter-orbit">
+        <div class="planet jupiter"></div>
+     </div>
+
+     <div class="orbit saturn-orbit">
+        <div class="planet saturn"></div>
+     </div>
+
+     <div class="orbit uranus-orbit">
+        <div class="planet uranus"></div>
+     </div>
+
+     <div class="orbit neptune-orbit">
+        <div class="planet neptune"></div>
+     </div>
+
+ </div>
+</body>
+</html>
